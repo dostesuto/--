@@ -3,29 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ブログ">
-    <title>ブログ</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="ブログ一覧">
+    <title>ブログ一覧</title>
     <style>
-        body { font-family: 'Noto Sans JP', sans-serif; }
-        header { background-color: #f8f9fa; padding: 30px; text-align: center; }
-        section { padding: 60px 0; }
-        footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .blog-list {
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .blog-post a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .blog-post h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #ff6b6b, #f8e71c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .blog-post p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
     </style>
-<header>
-<h1>ブログ</h1>
-</header>
-<section class="container">
-<h2>ただのブログです</h2>
-<p>下にブログがあります</p>
-<footer>
-<p>© 2024 My Stylish Website</p>
-</footer><!-- Bootstrap JS, jQuery, Popper.js -->
-<p>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</p>
+</head>
+<body>
+    <h1>ブログ一覧</h1>
+    <div class="blog-list">
+        <div class="blog-post">
+            <a href="blog1.html">
+                <h2>ブログタイトル 1</h2>
+                <p>ブログの簡単な紹介文や説明がここに入ります。</p>
+            </a>
+        </div>
+        <div class="blog-post">
+            <a href="blog2.html">
+                <h2>ブログタイトル 2</h2>
+                <p>ブログの簡単な紹介文や説明がここに入ります。</p>
+            </a>
+        </div>
+        <div class="blog-post">
+            <a href="blog3.html">
+                <h2>ブログタイトル 3</h2>
+                <p>ブログの簡単な紹介文や説明がここに入ります。</p>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
