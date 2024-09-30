@@ -9,39 +9,37 @@
         body {
             font-family: 'Noto Sans JP', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #222;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            flex-direction: column;
+            padding: 20px;
+            background-color: #fff; /* Change background to white */
+            color: #222; /* Adjust text color for readability */
         }
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            color: #222; /* Text color is dark */
         }
 
         .blog-list {
             width: 80%;
             max-width: 800px;
+            margin: 0 auto;
         }
 
         .blog-post {
-            background-color: #fff;
+            background-color: #f9f9f9;
             color: #222;
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .blog-post:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
         }
 
         .blog-post a {
